@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="criar.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+</head>
+<body>
+    
+    <section class="area-criar">
+        <div class="criar">
+            <div class="titulo">
+                <h3>Cadastrar</h3>
+            </div>
+            <form id="form" action="html_trab.html" method="PHOST">
+                
+                <input id="email" type="text" name="email" placeholder="Endereço de e-mail"  class="required" oninput="emailValidate()">
+                <span class="span-required">Digite um e-mail válido</span>
+                <div class="nome_sobrenome">
+                    <input type="text" name="nome" id="nome" placeholder="Nome"/>
+                    <input type="text" name="nome" id="sobrenome" placeholder="Sobrenome"/>
+                </div>
+                <input type="text" name="apelido" placeholder="Usuário" class="required" oninput="userValidate()">
+                <span class="span-required">Usuário deve ter no mínimo 5 caracteres</span>
+                <input id="password" type="password" name="senha" placeholder="Senha" class="required" oninput="mainPasswordValidate()">
+                <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
+                <input type="password" name="senha" placeholder="Confirmar senha" class="required" oninput="comparePassword()">
+                <span class="span-required">Senhas devem ser compatíveis</span>
+                <input class="botao-criar" type="submit" value="continuar">
+                <a href="login.html">Voltar</a></p>
+            </form>
+        </div>
+    </section>  
+</body>
+<script src="criar.js"></script>
+</html>

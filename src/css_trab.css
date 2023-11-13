@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    top: 15%;
+
+}
+
+a:hover {
+    color: red;
+}
+
+/* Estilo para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /*background-image: url('imagens/1.png');  Substitua pelo caminho da sua imagem */
+    background-color:#1b1f27;
+    background-size: 100% 100%; /* A imagem de fundo deve cobrir todo o espaço disponível */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Fixa a imagem de fundo para que ela não role com o conteúdo da página */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo seja repetida */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #4c5465;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para a barra de navegação */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+/* Estilo para os botões "Acessar Conta" e "Criar Cadastro" */
+#access-buttons {
+    display: flex;
+    margin-left: 650px; /* Espaço à direita para mover os botões para a direita */
+}
+
+#access-buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px; /* Espaço entre os botões */
+    padding: 5px 10px; /* Preenchimento interno do botão */
+    border: 2px solid #1b1f27; /* Borda com cor amarela (#ffcc00) */
+    /*background-color: #FF0000; /* Cor de fundo amarela (#ffcc00) */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s color 0.3s /* Transição suave de cor ao passar o mouse */
+}
+#access-buttons a:hover {
+    background-color: #fff; /* Cor de fundo branca ao passar o mouse */
+    color: #1b1f27; /* Cor do texto amarela ao passar o mouse */
+}
+
+/* Estilo para links de navegação quando passam o mouse por cima */
+#navlinks a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para o logotipo */
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo para os links de navegação */
+#nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#nav-links li {
+    margin: 0 20px;
+}
+
+#nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para links de navegação quando passam o mouse por cima */
+#nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o submenu */
+#submenu {
+    display: none;
+    position: absolute;
+    background-color: #1b1f27; /* Cor de fundo do submenu */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; /* Garante que o submenu esteja acima de outros elementos */
+}
+
+#nav-links li:hover .submenu {
+    display: block; /* Mostra o submenu ao passar o mouse sobre o item "Jogos" */
+}
+
+#submenu li {
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+#submenu li:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse sobre os itens do submenu */
+}
+
+#submenu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#submenu a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a seção de jogos */
+.games {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos para a seção de jogos */
+.games {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Estilos para os cards de jogos */
+.game-card {
+    width: 250px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s; /* Efeito de transição no transform */
+}
+
+.game-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.game-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.game-card p {
+    font-size: 14px;
+}
+
+.game-card a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+/* Efeito de movimento ao passar o mouse */
+.game-card:hover {
+    transform: translate(0, -5px); /* Move 5 pixels para cima ao passar o mouse */
+}

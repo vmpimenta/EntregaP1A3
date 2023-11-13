@@ -1,0 +1,127 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+        body {
+            background-color: #1b1f27;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .area-criar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .criar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #181920;
+            border-radius: 10px;
+            width: 600px;
+            height: 565px;
+            padding: 35px;
+            box-shadow: 5px 5px  rgba(0, 0, 0, 0.336);
+        }
+        
+        .criar form {
+            display: flex;
+            width: 100%;
+            top: 100%;
+            flex-direction: column;
+            
+        }
+        .titulo {
+            text-align: center;
+            color: #b40606;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 25px;
+
+        }
+     
+        .criar input {
+            margin-top: 20px;
+            background-color: #252A34;
+            padding-left: 10px;
+            color: #CBD0F7;
+            border: none;
+            height: 45px;
+            outline: none;
+            border-radius: 8px;
+        }
+
+       .nome_sobrenome {
+        display: flex;
+        justify-content: space-between;
+        margin: 1px;
+        flex-wrap: wrap;
+        
+       }
+
+       #nome {
+        padding: 25px;
+        padding-left: 8px;
+       }
+
+       #nome::placeholder {
+        align-items:flex-start;
+       }
+       
+
+       #sobrenome {
+        padding: 25px;
+        padding-left: 8px;
+       }
+      
+
+        
+        
+        form [type="submit"] {
+            display: block;
+            background-color: #5568fe;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            cursor: pointer;
+            width: 535px;
+            
+        
+        }
+
+        .span-required {
+            font-size: 12px;
+            margin: 3px 0 0 1px;
+            color: #b40606;
+            display: none;
+        }
+
+        input::placeholder {
+            color: #CBD0F7;
+            font-size: 14px;
+            
+            
+        }
+
+        form input[type=submit]:hover{
+            background-color:#252A34;
+        }
+        form input[type=text]:focus{
+            outline: 0;
+        }
+        form input[type=password]:focus{
+            outline: 0;
+        }
+       
+        p {
+            color: #CBD0F7;
+            margin-top: 10px;
+        }
+        
+        a {
+            color: #CBD0F7;
+            text-decoration: none;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        

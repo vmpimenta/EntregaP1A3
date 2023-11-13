@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Games</title>
+</head>
+<body>
+    <a id="inicio" href="html_trab.html">Inicio</a>
+    <section class="area-login">
+        <div class="login">
+            <div>
+                <img src="./imagens/logo.jpg" alt="">
+
+            </div>
+            <form id="form" action="html_trab.html" method="PHOST">
+                <input type="text" name="nome" placeholder="nome de usuario" class="required" oninput="nameValidate()">
+                <span class="span-required">Nome deve ter no mínimo 5 caracteres</span>
+                <input type="password" name="senha" placeholder="sua senha" class="required" oninput=" mainPasswordValidate()">
+                <span class="span-required">Digite uma senha com no minimo 8 caracteres</span>
+                <input type="submit" value="entrar">
+            </form>
+            <a id="a1" href="esqueci-senha.html">Esqueceu sua senha?</a>
+            <p>Ainda não tem uma conta?<a href="criar.html">Criar conta</a></p>
+
+        </div>
+    </section>
+    
+</body>
+<script src="login.js"></script>
+</html>
