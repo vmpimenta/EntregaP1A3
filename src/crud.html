@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <title>CRUD de Jogos</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CRUD de Jogos</h2>
+
+    <form id="gameForm">
+        <label for="gameTitle">Título do Jogo:</label>
+        <input type="text" id="gameTitle" required>
+
+        <label for="gameGenre">Gênero:</label>
+        <input type="text" id="gameGenre" required>
+
+        <button type="button" onclick="addGame()">Adicionar Jogo</button>
+    </form>
+
+    <table id="gameTable">
+        <tr>
+            <th>Título</th>
+            <th>Gênero</th>
+            <th>Ações</th>
+        </tr>
+    </table>
+
+    <script src="crud.js"></script>
+        
+   
+
+</body>
+</html>
