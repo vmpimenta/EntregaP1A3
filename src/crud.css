@@ -12,12 +12,20 @@ h2 {
 }
 
 form {
-    margin-bottom: 20px;
+    padding: 40px;
+    border: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #181920;
 }
 
 #plataformForm {
-    text-align: start;
-    color: #ddd;
+    text-align: center;
+    color: #b40606;
 }
 
 label {
@@ -63,11 +71,13 @@ th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    background-color: #181920;
+    color: white;
 }
 
 th {
-    background-color: #1b1f27;
-    color: white;
+    background-color: #181920;
+    color: #b40606;
 }
 
 tr:nth-child(even) {
