@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CRUD_JG.css">
+    <script type="text/javascript" src="CRUD_JG.js"></script>
+    <title>CRUD de Jogos</title>
+</head>
+<body>
+    
+    <form id="crud-form">
+
+        <h1>Cadastro de Jogos</h1>
+
+        <label for="Nome">Nome:</label>
+        <input type="text" id="name" placeholder="Nome">
+    
+        <label for="Gênero">Gênero:</label>
+        <input type="text" id="gen" placeholder="Gênero">
+        <label for="Ano">Ano:</label>
+        <input type="number" id="ano" placeholder="Ano">
+    
+        <button type="button" onclick="createOrUpdate()">Adiconar/Editar</button>
+      </form>
+    
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Gênero</th>
+            <th>Ano</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+</body>
+</html>

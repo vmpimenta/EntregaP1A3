@@ -1,13 +1,13 @@
-function addGame() {
-    var title = document.getElementById("gameTitle").value;
-    var genre = document.getElementById("gameGenre").value;
+function addPlataform() {
+    var title = document.getElementById("plataformTitle").value;
+    var plataform = document.getElementById("plataformMultiplataform").value;
 
-    if (title === "" || genre === "") {
+    if (title === "" || plataform === "") {
         alert("Por favor, preencha todos os campos.");
         return;
     }
 
-    var table = document.getElementById("gameTable");
+    var table = document.getElementById("plataformTable");
     var row = table.insertRow(1);
 
     var cell1 = row.insertCell(0);
@@ -15,21 +15,21 @@ function addGame() {
     var cell3 = row.insertCell(2);
 
     cell1.innerHTML = title;
-    cell2.innerHTML = genre;
-    cell3.innerHTML = '<button onclick="editGame(this)">Editar</button> <button onclick="deleteGame(this)">Excluir</button>';
+    cell2.innerHTML = plataform;
+    cell3.innerHTML = '<button onclick="editPlataform(this)">Editar</button> <button onclick="deletePlataform(this)">Excluir</button>';
 
-    document.getElementById("gameForm").reset();
+    document.getElementById("plataformForm").reset();
 }
 
-function editGame(row) {
+function editPlataform(row) {
     var selectedRow = row.parentNode.parentNode.rowIndex;
-    var table = document.getElementById("gameTable");
-    document.getElementById("gameTitle").value = table.rows[selectedRow].cells[0].innerHTML;
-    document.getElementById("gameGenre").value = table.rows[selectedRow].cells[1].innerHTML;
+    var table = document.getElementById("plataformTable");
+    document.getElementById("plataformTitle").value = table.rows[selectedRow].cells[0].innerHTML;
+    document.getElementById("plataformMultiplataform").value = table.rows[selectedRow].cells[1].innerHTML;
     table.deleteRow(selectedRow);
 }
 
-function deleteGame(row) {
+function deletePlataform(row) {
     var selectedRow = row.parentNode.parentNode.rowIndex;
-    document.getElementById("gameTable").deleteRow(selectedRow);
+    document.getElementById("plataformTable").deleteRow(selectedRow);
 }
