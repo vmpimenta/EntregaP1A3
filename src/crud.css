@@ -1,15 +1,31 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    text-align: center
+    text-align: center;
+    background-color: #1b1f27;
+    
 }
 
 h2 {
-    color: #333;
+    color: #b40606;
+    text-align: center;
 }
 
 form {
-    margin-bottom: 20px;
+    padding: 40px;
+    border: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: #181920;
+}
+
+#plataformForm {
+    text-align: center;
+    color: #b40606;
 }
 
 label {
@@ -23,12 +39,22 @@ input {
     margin-bottom: 10px;
 }
 
+input::placeholder {
+    color: #CBD0F7;
+    
+    
+    
+}
+
 button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #CBD0F7;
+    color: #5568fe;
     padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
     border: none;
     cursor: pointer;
+    
 }
 
 button:hover {
@@ -45,11 +71,13 @@ th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    background-color: #181920;
+    color: white;
 }
 
 th {
-    background-color: #1b1f27;
-    color: white;
+    background-color: #181920;
+    color: #b40606;
 }
 
 tr:nth-child(even) {

@@ -1,52 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="crud.css">
-    <title>CRUD de Jogos</title>
+    <title>CRUD de Plataformas</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #4CAF50;
-            color: white;
-        }
-        form {
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
 
-    <h2>CRUD de Jogos</h2>
 
-    <form id="gameForm">
-        <label for="gameTitle">Título do Jogo:</label>
-        <input type="text" id="gameTitle" required>
+    <form>
+            <h2>CRUD de Plataformas</h2>
+        <div id="plataformForm" >
+            <label for="plataformTitle">Nome da Plataforma:</label>
+            <input type="text" id="plataformTitle" required>
+    
+            <label for="plataformMultiplataform">Multiplataforma:</label>
+            <input type="text" id="plataformMultiplataform" required>
 
-        <label for="gameGenre">Gênero:</label>
-        <input type="text" id="gameGenre" required>
+        </div>
+       
 
-        <button type="button" onclick="addGame()">Adicionar Jogo</button>
+        <button type="button" onclick="addPlataform()">Adicionar Plataforma</button>
     </form>
 
-    <table id="gameTable">
+    <table id="plataformTable">
         <tr>
             <th>Título</th>
-            <th>Gênero</th>
+            <th>Multiplataforma</th>
             <th>Ações</th>
         </tr>
     </table>
