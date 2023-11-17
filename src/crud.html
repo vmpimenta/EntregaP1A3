@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +12,23 @@
     <h2>CRUD de Plataformas</h2>
 
     <form>
-        <div id="gameForm" >
-            <label for="gameTitle">Nome da Plataforma:</label>
-            <input type="text" id="gameTitle" required>
+        <div id="plataformForm" >
+            <label for="plataformTitle">Nome da Plataforma:</label>
+            <input type="text" id="plataformTitle" required>
     
-            <label for="gameGenre">Gênero:</label>
-            <input type="text" id="gameGenre" required>
+            <label for="plataformMultiplataform">Multiplataforma:</label>
+            <input type="text" id="plataformMultiplataform" required>
 
         </div>
        
 
-        <button type="button" onclick="addGame()">Adicionar Jogo</button>
+        <button type="button" onclick="addPlataform()">Adicionar Plataforma</button>
     </form>
 
-    <table id="gameTable">
+    <table id="plataformTable">
         <tr>
             <th>Título</th>
-            <th>Gênero</th>
+            <th>Multiplataforma</th>
             <th>Ações</th>
         </tr>
     </table>
